@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Executive dashboard Load</name>
+        <run_as display_value="Amrita_Sarkhel">db5042e26f55df00d69dc8c17c3ee4fc</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:10:00</run_period>
+        <run_start>2018-04-19 05:22:55</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[//Reopen Incident count for this Month
+gs.debug('testone');
+
+var gr1=new GlideRecord('incident');
+gr1.addEncodedQuery('sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()^reopen_count>0');
+gr1.query();
+
+var reOpenIncidentCount = gr1.getRowCount();
+
+
+
+var grReOpendAll=new GlideRecord('incident');
+grReOpendAll.addEncodedQuery('sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()');
+grReOpendAll.query();
+
+var totalIncidentCount = grReOpendAll.getRowCount();
+
+
+
+var reOpenIncidentPercent = (reOpenIncidentCount/totalIncidentCount) * 100;
+gs.info('testone1' +reOpenIncidentPercent);
+gs.info("% reopen Tickets: " + reOpenIncidentPercent + reOpenIncidentCount + totalIncidentCount );
+
+
+
+var grLastMonth = new GlideRecord('incident');
+grLastMonth.addEncodedQuery('sys_created_onONLast month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth()^reopen_count>0');
+grLastMonth.query();
+
+var reOpenIncidentCountLastMonth = grLastMonth.getRowCount();
+
+
+
+var grReOpendAllLastMonth=new GlideRecord('incident');
+grReOpendAllLastMonth.addEncodedQuery('sys_created_onONLast month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth()');
+grReOpendAllLastMonth.query();
+
+var totalIncidentCountLastMonth = grReOpendAllLastMonth.getRowCount();
+
+
+
+var reOpenIncidentPercentLastMonth = (reOpenIncidentCountLastMonth/totalIncidentCountLastMonth) * 100;
+gs.info('testone1' +reOpenIncidentPercentLastMonth.toFixed(2));
+
+gs.info("% reopen Tickets: " + reOpenIncidentPercentLastMonth.toFixed(2) + reOpenIncidentCountLastMonth + totalIncidentCountLastMonth );
+
+
+
+var gRthisMonthPercent = new GlideRecord('x_infte_dashboards_excutivedashboard');
+gRthisMonthPercent.addQuery('heading_1','% Reopen Tickets');
+gRthisMonthPercent.query();
+
+while(gRthisMonthPercent.next()){
+		gs.debug("% reopen Tickets: value1 update"+  gRthisMonthPercent.getDisplayValue('heading_1'));
+	gRthisMonthPercent.setValue('value_1',reOpenIncidentPercent.toFixed(2)+"%");
+	gRthisMonthPercent.setValue('value_2',reOpenIncidentPercentLastMonth.toFixed(2)+"%");
+	gRthisMonthPercent.update();
+}
+
+var grTotalOpenIncidents=new GlideRecord('incident');
+grTotalOpenIncidents.addEncodedQuery('active=true^sys_created_onONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()');
+grTotalOpenIncidents.query();
+
+var totalOpenIncidentCount = grTotalOpenIncidents.getRowCount();
+
+
+
+
+
+gs.debug("Total Open Incident Count: " +totalOpenIncidentCount );
+
+
+
+var grLastMonthTotalOpenIncidentCount = new GlideRecord('incident');
+grLastMonthTotalOpenIncidentCount.addEncodedQuery('active=true^sys_created_onONLast month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth()');
+grLastMonthTotalOpenIncidentCount.query();
+
+var totalOpenIncidentCountLastMonth = grLastMonthTotalOpenIncidentCount.getRowCount();
+
+
+
+
+gs.debug("Total OpenIncident Count: " + totalOpenIncidentCountLastMonth );
+
+
+
+var gRTotalOpenIncidentCountthisMonthPercent = new GlideRecord('x_infte_dashboards_excutivedashboard');
+gRTotalOpenIncidentCountthisMonthPercent.addQuery('heading_1','Total Incidents Opened');
+gRTotalOpenIncidentCountthisMonthPercent.query();
+
+while(gRTotalOpenIncidentCountthisMonthPercent.next()){
+		gs.debug("Total Incidents Opened: value1 update"+  gRTotalOpenIncidentCountthisMonthPercent.getDisplayValue('heading_1'));
+	gRTotalOpenIncidentCountthisMonthPercent.setValue('value_1',totalOpenIncidentCount);
+	gRTotalOpenIncidentCountthisMonthPercent.setValue('value_2',totalOpenIncidentCountLastMonth);
+	gRTotalOpenIncidentCountthisMonthPercent.update();
+}
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-19 05:35:51</sys_created_on>
+        <sys_id>b5de1d39db2d930004bf6f048a961976</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Executive dashboard Load</sys_name>
+        <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+        <sys_update_name>sysauto_script_b5de1d39db2d930004bf6f048a961976</sys_update_name>
+        <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+        <sys_updated_on>2018-04-19 06:45:28</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>09e687ffdb5dd74003a29ea3db9619c8</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_infte_dashboards_excutivedashboard">
+    <x_infte_dashboards_excutivedashboard action="INSERT_OR_UPDATE">
+        <drilldown_topic>Supplier</drilldown_topic>
+        <drilldown_unit>Incidents</drilldown_unit>
+        <heading_1>Open Critical Incidents</heading_1>
+        <heading_2>Areas Impacted</heading_2>
+        <order>13</order>
+        <prefered_value>Low</prefered_value>
+        <progress_value_1/>
+        <sectionnumber>1</sectionnumber>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-13 07:49:39</sys_created_on>
+        <sys_id>09e687ffdb5dd74003a29ea3db9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+        <sys_updated_on>2018-04-13 07:49:39</sys_updated_on>
+        <tile_name/>
+        <value_1>2</value_1>
+        <value_2>SAP</value_2>
+        <value_color>DarkOrange</value_color>
+    </x_infte_dashboards_excutivedashboard>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>Suganya_Nagarajan</sys_created_by>
+        <sys_created_on>2018-04-19 07:28:20</sys_created_on>
+        <sys_id>f68b35754f21974053c240f18110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-04-13 00:49:39</sys_name>
+        <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+        <sys_update_name>sys_metadata_link_f68b35754f21974053c240f18110c7ac</sys_update_name>
+        <sys_updated_by>Suganya_Nagarajan</sys_updated_by>
+        <sys_updated_on>2018-04-19 07:28:20</sys_updated_on>
+        <tablename>x_infte_dashboards_excutivedashboard</tablename>
+    </sys_metadata_link>
+</record_update>

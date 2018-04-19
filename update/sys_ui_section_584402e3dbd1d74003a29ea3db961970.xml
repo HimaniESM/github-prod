@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="584402e3dbd1d74003a29ea3db961970" sys_domain="global" table="x_infte_dashboards_excutivedashboard" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>dd5442e3dbd1d74003a29ea3db961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>drilldown_unit</element>
+            <position>1</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>515442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>drilldown_topic</element>
+            <position>2</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>d15442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>heading_1</element>
+            <position>3</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>555442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>d55442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>heading_2</element>
+            <position>5</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>595442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>progress_value_1</element>
+            <position>6</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>d95442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>prefered_value</element>
+            <position>7</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>5d5442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>dd5442e3dbd1d74003a29ea3db961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <position>9</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>515442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>10</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>d15442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sectionnumber</element>
+            <position>11</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>555442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tile_name</element>
+            <position>12</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>d55442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value_1</element>
+            <position>13</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>595442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>14</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>d95442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value_2</element>
+            <position>15</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>5d5442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value_color</element>
+            <position>16</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>dd5442e3dbd1d74003a29ea3db961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>17</position>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:23</sys_created_on>
+            <sys_id>515442e3dbd1d74003a29ea3db961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_infte_dashboards_excutivedashboard" sys_domain="global" view="Default view">584402e3dbd1d74003a29ea3db961970</sys_ui_section>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:23</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_infte_dashboards_excutivedashboard</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-12 08:20:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>584402e3dbd1d74003a29ea3db961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_infte_dashboards_excutivedashboard</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+            <sys_update_name>sys_ui_section_584402e3dbd1d74003a29ea3db961970</sys_update_name>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-12 08:20:02</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

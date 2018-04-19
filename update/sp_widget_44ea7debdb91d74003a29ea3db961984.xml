@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+
+	$scope.floatss = [];
+
+	$scope.convertFloat = function(value){
+		return parseFloat(value).toFixed(2);
+	};
+	
+	$scope.calculatingPercentage = function(value1,value2){
+	return ((1-(parseFloat(value1)/parseFloat(value2)))*100).toFixed(2);
+	};
+	
+		$scope.openModal = function(value){
+			$scope.position = value;
+	};
+		$scope.closeModal = function(){
+			  document.getElementById('myModal').style.display = "block";
+
+	};
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header{
+ height:50px;
+  	width:100%;
+ margin-left: 2%;
+ margin-bottom: 1%;
+  margin-right: 2%;
+  
+vertical-align: middle;
+}
+
+.scroll{
+  overflow: hidden;
+  position: fixed;
+}
+
+.row{
+    margin-left: 0px;
+
+}
+
+.corner-bg {
+    border-radius: 0px;
+}
+
+
+
+.test {
+       margin-left: 0px;
+}
+
+progress[value] {
+  width: 200px;
+}
+#grow1:hover
+{
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+}
+
+#grow1:hover
+{
+        background-color: #f7f4f4;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 17px solid transparent;
+  border-right:17px solid transparent;
+  
+  border-bottom: 17px solid ;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  
+  border-top: 17px solid ;
+}
+
+body{
+
+  //padding-top:50px;
+  background: #000;
+	font-family: 'Bree Serif' !important;
+}
+.flip {
+  -webkit-perspective: 800;
+perspective: 800;
+
+ position: relative;
+ text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+.flip .card {
+
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.flip .card .face {
+
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+  z-index: 2;
+   
+}
+.flip .card .front {
+  position: absolute;
+   width: 100%;
+   height: 100%;
+  z-index: 1;
+
+}
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+    width: 100%;
+       height: 100%;
+       height: 250px;
+}
+  .inner{margin:0px !important;}
+	
+.well{
+	background-color:white;
+	height:250px;
+	width:100%;
+    padding:0px;
+	border-width: 2px;
+	}
+	
+
+
+.nav1 {
+	height: 30px;
+	color: white;
+	font-size: 12px;
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+}
+
+ .nav1 ul {
+	margin-right: 40px;
+}
+
+ .nav1 ul li a {
+	margin-top: -10px;
+	color: white;
+	margin-right: 15px;
+}
+
+ .nav1 ul li a:hover {
+	background-color: transparent !important;
+	cursor: hand;
+}
+ .nav1 ul li a:focus {
+	background-color: transparent !important;
+}
+
+  .nav li a:focus {
+	background-color: transparent;
+}
+
+ .navbar &gt; li &gt; a {
+	padding-top: 5px !important;
+	padding-bottom: 0px !important;
+}
+
+ .navbar {
+	min-height: 40px !important;
+}
+
+ .logo {
+	position: absolute;
+	margin-left: 25px;
+	margin-top: 12px;
+	border: none !important;
+	outline: none !important;
+	text-decoration: none !important;
+}
+
+
+
+ .divider {
+	position: absolute;
+	right: -1px;
+	top: 20px;
+}
+
+ .badge {
+	position: absolute;
+	top: 20px;
+	right: 8px;
+	background-color: #cc0000;
+}
+
+
+
+ .test {
+	position: static;
+}
+
+
+
+
+//// TESTING //////
+
+
+/* The Modal (background) */
+/*.modal {
+ 
+ padding: 150px;
+       background-color: rgba(255,255,255,.4);
+}*/
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+    background-color: rgba(255,255,255,.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+ // background-color: #0000ff;
+  //margin: auto;
+  padding: 10;
+  width: 100%;
+  margin-left:0%; margin-right:10%;margin-top:5%;
+   background-color: rgba(255,255,255,.9);
+  
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+  
+}
+
+.modal.fade{
+  opacity:1;
+}
+.modal.fade .modal-dialog {
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+}
+
+.blur{
+  -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    filter: blur(20px);
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row &gt; .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next &amp; previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+//#1C2833
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+ //opacity: 0.3;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, .2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19)
+}
+
+table.tiles {
+    position: relative;
+    left: 60px;
+}
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>esmcafe_executivedashboard</id>
+        <internal>false</internal>
+        <link/>
+        <name>ESMCafe_ExecutiveDashBoard</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var currentIndex=0;
+	var itemNumber=1;
+	var colSize = 4;
+	
+	data.objects = [];
+	data.objects_details = [];
+	
+	/* Retriving data for Tiles in widget from u_dashboard Table*/
+	
+	var gr = new GlideRecord('x_infte_dashboards_excutivedashboard');
+	gr.orderBy('sectionnumber');
+	gr.query();
+	
+	
+	
+	while(gr.next()){
+		var object = {};
+			object.u_heading_1 = gr.getValue('heading_1');
+			object.u_value_1 = gr.getValue('value_1');
+			object.u_heading_2 = gr.getValue('heading_2');
+			object.u_value_2 = gr.getValue('value_2');
+			object.u_value_color = gr.getValue('value_color');
+			object.u_integer = gr.getValue('progress_value_1');
+			object.u_prefered_value = gr.getValue('prefered_value');
+			object.u_drilldown_topic = gr.getValue('drilldown_topic');
+			object.u_drilldown_unit = gr.getValue('drilldown_unit');
+			object.u_tile_number = gr.getValue('sectionnumber');
+			object.u_tile_name = gr.getValue('tile_name');
+			
+		
+			/* Retriving data for each Tile presents in Executive DashBoard from u_dashboard_details Table*/
+
+		
+		
+			var gr_details = new GlideRecord('x_infte_dashboards_executivedashboarddetails');
+			gr_details.addQuery('parent_tag',object.u_heading_1);
+			gr_details.orderBy('order');
+			gr_details.query();
+			
+			var i = 0;
+			while(gr_details.next()){
+				var object_detail = {};
+					
+					object_detail.u_heading = gr_details.getDisplayValue('heading');
+					object_detail.u_detail = gr_details.getValue('tile_details');
+					object_detail.u_parent_tag = gr_details.getValue('parent_tag');
+					data.objects_details.push(object_detail);
+				}
+			/*	if(itemNumber==1){
+					data.objects.push([]);
+				}
+				if(itemNumber>colSize){
+					console.log("aaa");
+					itemNumber=1;
+					currentIndex=Math.floor(currentIndex+1);
+				}
+				var bucketArr=data.objects[data.objects.length-1];
+				bucketArr.push(object);
+				//console.log(currentIndex);
+				itemNumber++;*/
+		data.objects.push(object);
+			}
+		})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-12 07:39:03</sys_created_on>
+        <sys_id>44ea7debdb91d74003a29ea3db961984</sys_id>
+        <sys_mod_count>94</sys_mod_count>
+        <sys_name>ESMCafe_ExecutiveDashBoard</sys_name>
+        <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+        <sys_update_name>sp_widget_44ea7debdb91d74003a29ea3db961984</sys_update_name>
+        <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+        <sys_updated_on>2018-04-19 05:19:25</sys_updated_on>
+        <template><![CDATA[<div class="row" style="margin-top:0px;margin-bottom:0px;font-family: Arial;" id="content">
+
+    <div class="panel-heading" style="text-align : center ; ">
+        <h1><b>Executive DashBoard</b> </h1></div>
+
+    <section>
+        <div class="test" style="width: 1200px; ">
+            <div class="col-md-offset1" >
+              
+ 
+
+                <div  class="col-md-3  hover-shadow cursor corner-bg " style="height: 160px; width:280px; margin: 5px;padding:0px !important" ng-style="{'background-image' : 'url(tile_bg8.jpg)'  }" ng-repeat="object in data.objects"  alt="" data-toggle="modal" data-target="#myModal" ng-click="openModal(data.objects.indexOf(object));">
+
+                    <div ng-style="{'height':'20px'};" style="padding-left:10px">
+                        <h4><center><b><font color="#37474F" >{{object.u_heading_1}}</font></b></center></h4>
+                    </div>
+
+                    <!-- <div class="skillbar-circle"  style="margin-top:25px;"> -->
+                    <!-- <div ng-if=" object.u_integer != null " data-percent="{{object.u_integer}}%">
+
+                    <h5 ng-style="{'color': '#fff'}" style="margin-top:5px;padding-left:10px"><b>{{object.u_value_1}}</b></h5>
+                </div>
+								<div ng-if=" object.u_integer == null "> </div>-->
+
+                    <h4 ng-style="{'color': '#37474F'  }" style="margin-top:5px; margin-bottom:10px;padding-left:10px"><center><b>{{object.u_value_1}}</b></center></h4>
+
+                    <div ng-style="{'height':'5px'}" ng-if="object.u_heading_2 != '' " style="margin-bottom:15px;padding-left:10px">
+                      <h5 ng-style="{'color': '#37474F'  }"><center>{{object.u_heading_2}} : {{object.u_value_2}}</center></h5>
+                    </div>
+
+                    <!--<div class="skillbar clearfix " ng-if=" object.u_integer != null " style="background-color: rgba(0,0,0,0.2);height:30%;margin-top:13%" data-percent="{{object.u_integer}}%">
+                    <div class="skillbar-bar" style="margin-top:0px;" ng-style="{'background': '#eaff00'}"></div>
+										<button class="btn btn-link" style="text-decoration:none; margin-top:5px;color:white;float:right;">
+                        More Details
+                    </button>
+                </div>-->
+                    <!--  <div ng-if=" object.u_integer == null"> -->
+                    <!--1<div class="row" ng-if=" object.u_heading_2.toLowerCase() == 'last month' " style="">-->
+
+                        <!--              <div ng-if="object.u_prefered_value.toLowerCase() == 'low'" style="margin-left:15px ;padding-left:10px;">
+
+                            <table>
+                                <tr ng-if=" convertFloat(object.u_value_2) > convertFloat(object.u_value_1) ">
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h5 ng-style="{'color': '#fff'  }" style=" margin-right : 10px  ">Decrease of {{calculatingPercentage(object.u_value_1,object.u_value_2)}}%</h5></td>
+                                        <td>
+                                            <div style="color:rgb(194,24,7);margin-bottom : 0px" class="arrow-down"> </div>
+                                        </td>
+                                    </div>
+                                </tr>	<!--191,54,12--
+
+                                <tr ng-if=" convertFloat(object.u_value_1) > convertFloat(object.u_value_2) ">
+
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h5 ng-style="{'color': '#fff'  }" style=" margin-right : 10px  ">Increase of {{calculatingPercentage(object.u_value_2,object.u_value_1)}} %</h5></td>
+                                        <td>
+                                            <div style="color:rgb(118,255,3);margin-bottom : 0px" class="arrow-up"></div>
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>-->
+                        <div ng-if="object.u_prefered_value.toLowerCase() == 'low'" style="margin-left:15px ;padding-left:0px; ;text-align:center">
+
+                            <table class="tiles">
+                                <tr ng-if=" convertFloat(object.u_value_2) > convertFloat(object.u_value_1) ">
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h5 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px ; ">Decrease of {{calculatingPercentage(object.u_value_1,object.u_value_2)}}%</h5></td>
+                                        <td>
+                                            <div style="color:rgb(51,105,30);margin-bottom : 0px" class="arrow-up"> </div>
+                                        </td>
+                                    </div>
+                                </tr>
+                                <!--191,54,12  194,24,7 -->
+
+                                <tr ng-if=" convertFloat(object.u_value_1) > convertFloat(object.u_value_2) ">
+
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h5 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Increase of {{calculatingPercentage(object.u_value_2,object.u_value_1)}} %</h5></td>
+                                        <td>
+                                            <div style="color:rgb(194,24,7);margin-bottom : 0px" class="arrow-down"></div>
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div ng-if="object.u_prefered_value.toLowerCase() == 'high'" style="margin-left:15px ;padding-left:0px">
+
+                            <table class="tiles">
+                                <tr ng-if="  convertFloat(object.u_value_2) >  convertFloat(object.u_value_1) ">
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h5 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Decrease of {{calculatingPercentage(object.u_value_1,object.u_value_2)}}%</h5></td>
+                                        <td>
+                                            <div style="color:rgb(194,24,7);float:right;margin-right:60px;margin-bottom : 0px" class="arrow-down"></div>
+                                        </td>
+                                    </div>
+                                </tr>
+
+                                <tr ng-if="  convertFloat(object.u_value_1) >  convertFloat(object.u_value_2) ">
+
+                                    <div>
+                                        <td>
+                                            <h5 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Increase of {{calculatingPercentage(object.u_value_2,object.u_value_1)}} %</h5></td>
+                                        <td>
+                                            <div style="color:rgb(51,105,30);float:right;margin-right:60px;margin-bottom : 0px" class="arrow-up"></div>
+                                        </td>
+                                    </div>
+
+                                </tr>
+                            </table>
+                      <!--  </div>-->
+                    </div>
+
+                    <div ng-style="{'bottom':'4px'}"  style="padding-left:10px;float:left">
+                        <h5 ng-style="{'color': '#37474F'  }">  Prefered Value : {{object.u_prefered_value}}</h5>
+                    </div>
+
+                    <button class="btn btn-link" style="text-decoration:none; margin-top:0px;color:rgb(55,71,79);text-align:bottom;float:right;font-family: 'Open Sans', 'sans-serif'">
+                        More Details
+                    </button>
+                </div>
+            </div>
+          </div>
+       
+
+    </section>
+   </div>
+<!-- -->
+<div id="myModal" class="modal " style="width: 100%; ">
+  
+    <div class="modal-content modal-dialog" style=" width:850px; margin:8%;padding:0px !important ;text-align : center">
+ 
+      
+      <div class="hover-shadow cursor corner-bg" style="background-color: #ffffff;">
+            <div style="width: 50%;">
+                <center>
+                    <B style="font-size: 200%;height:50px; margin-left=-1%">Details</B> 
+                    <button type="button" style="color:black"class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> 
+                </center>
+            </div>
+            <div class="row">
+                <div style="height:250px;" class="col-md-7">
+                    <div class="">
+                        <table class="col-md-10">
+                            <tr style="font-size: 150%;height:40px;">
+                                <!--ng-style="{'color' : data.backgroundColors[position]}"-->
+                                <th>
+                                    <center> {{data.objects[position].u_drilldown_topic}}</center>
+                                </th>
+                                <th>
+                                    <center>{{data.objects[position].u_drilldown_unit}}</center>
+                                </th>
+                            </tr>
+                            <tr ng-repeat="object_detail in data.objects_details ">
+                                <td style="font-size: 120%;height:40px;" ng-if="data.objects[position].u_heading_1 == object_detail.u_parent_tag">
+                                    <center> {{object_detail.u_heading}}</center>
+                                </td>
+
+                                <td style="font-size: 120%;height:10px;" ng-if="data.objects[position].u_heading_1 == object_detail.u_parent_tag">
+                                    <center> {{ object_detail.u_detail}}</center>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!----->
+
+                <div id="grow" class="col-md-3 hover-shadow cursor corner-bg " style="height: 180px; width:330px; margin:10px;padding-right:10px !important ;" ng-style="{'background-image' : 'url(tile_bg8.jpg)' }">
+                    <div ng-style="{'height':'30px'};" style="padding-left:8px;margin-top:1px;">
+                        <h4><center><b><font color="#37474F" >{{data.objects[position].u_heading_1}}</font></b></center></h4>
+                    </div>
+
+                    <!-- <div class="skillbar-circle"  style="margin-top:25px;"> -->
+                    <!--<div ng-if=" data.objects[position].u_integer != null " data-percent="{{data.objects[position].u_integer}}%">
+
+                    <h4 ng-style="{'color': '#fff'}" style="margin-top:5px;padding-left:10px"><b>{{data.objects[position].u_value_1}}</b></h4>
+                </div>
+                <div ng-if=" data.objects[position].u_integer == null "> </div>-->
+
+                  <h4 ng-style="{'color': '#37474F'  }" style="margin-top:5px; margin-bottom:15px;padding-left:10px;text-align: left;"><center><b>{{data.objects[position].u_value_1}}</b></center></h4>
+
+                    <div ng-style="{'height':'5px'}" ng-if="object.u_heading_2 != '' " style="margin-bottom:15px;padding-left:10px;text-align: left;">
+                      <h4 ng-style="{'color': '#37474F'  }"><center>{{data.objects[position].u_heading_2}} : {{data.objects[position].u_value_2}}</center></h4>
+                    </div>
+
+                    <!-- <div class="skillbar clearfix " ng-if=" data.objects[position].u_integer != null " style="background-color: rgba(0,0,0,0.2);width:330px;margin-left:-2.7%;height:22%;margin-top:17%;padding :0px" data-percent="{{data.objects[position].u_integer}}%">
+
+                    <div class="skillbar-bar" style="margin-top:0px;" ng-style="{'background': '#eaff00'}"></div>
+                    <!--<button class="btn btn-link" style="text-decoration:none; margin-top:5px;color:white;float:right;">
+                        More Details
+                    </button>
+                </div>
+
+                <div ng-if=" data.objects[position].u_integer == null"> -->
+                <!-- 2   <div class="row" ng-if=" data.objects[position].u_heading_2.toLowerCase() == 'last month' " style="">-->
+
+                        <div ng-if="data.objects[position].u_prefered_value.toLowerCase() == 'low'" style="margin-left:15px ;padding-left:0px;">
+
+                            <table class="tiles">
+                                <tr ng-if=" convertFloat(data.objects[position].u_value_2) > convertFloat(data.objects[position].u_value_1) ">
+                                    <div ng-repeat="data.objects[position] in data.objects">
+                                        <td>
+                                            <h4 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Decrease of {{calculatingPercentage(data.objects[position].u_value_1,data.objects[position].u_value_2)}}%</h4></td>
+                                        <td>
+                                            <!-- 51 51 51-->
+                                            <div style="color:rgb(51,105,30);margin-bottom : 0px" class="arrow-up"> </div>
+                                        </td>
+                                    </div>
+                                </tr>
+
+                                <tr ng-if=" convertFloat(data.objects[position].u_value_1) > convertFloat(data.objects[position].u_value_2) ">
+
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h4 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Increase of {{calculatingPercentage(data.objects[position].u_value_2,data.objects[position].u_value_1)}} %</h4></td>
+                                        <td>
+                                            <div style="color:rgb(194,24,7);margin-bottom : 0px" class="arrow-down"></div>
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div ng-if="data.objects[position].u_prefered_value.toLowerCase() == 'high'" style="margin-left:15px ;padding-left:0px">
+
+                            <table class="tiles">
+                                <tr ng-if="  convertFloat(data.objects[position].u_value_2) >  convertFloat(data.objects[position].u_value_1) ">
+                                    <div ng-repeat="object in data.objects">
+                                        <td>
+                                            <h4 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Decrease of {{calculatingPercentage(data.objects[position].u_value_1,data.objects[position].u_value_2)}}%</h4></td>
+                                        <td>
+                                            <div style="color:rgb(194,24,7);float:right;margin-right:60px;margin-bottom : 0px" class="arrow-down"></div>
+                                        </td>
+                                    </div>
+                                </tr>
+
+                                <tr ng-if="  convertFloat(data.objects[position].u_value_1) >  convertFloat(data.objects[position].u_value_2) ">
+
+                                    <div>
+                                        <td>
+                                            <h4 ng-style="{'color': '#37474F'  }" style=" margin-right : 10px  ">Increase of {{calculatingPercentage(data.objects[position].u_value_2,data.objects[position].u_value_1)}} %</h4></td>
+                                        <td>
+                                            <div style="color:rgb(51,105,30);float:right;margin-right:60px;margin-bottom : 0px" class="arrow-up"></div>
+                                        </td>
+                                    </div>
+
+                                </tr>
+                            </table>
+                        </div>
+                    <!--2</div>-->
+
+                    <div ng-style="{'bottom':'4px'}"  style="padding-left:10px;float:center">
+                        <h5 ng-style="{'color': '#37474F'  }"> <center> Prefered Value : {{data.objects[position].u_prefered_value}} </center></h5>
+                    </div>
+
+                   
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+                            <div class="face back">-->
+
+    <!--
+                            <div class="face back">-->
+
+
+    <script>
+        setInterval(function() {
+
+            jQuery('.skillbar').each(function() {
+                jQuery(this).find('.skillbar-bar').animate({
+                    width: jQuery(this).attr('data-percent')
+                }, 2000);
+            });
+        }, 1000);
+
+        function popUpAnim(x) {
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
+        };
+        $('#myModal').on('show.bs.modal', function(e) {
+            var anim = "slideInLeft";
+            //  alert('testing bounce')
+            popUpAnim(anim);
+        })
+        $('#myModal').on('hide.bs.modal', function(e) {
+            var anim = "slideOutDown";
+            //   alert('testing bounce exit')
+
+            popUpAnim(anim);
+        })
+
+        $(document).keydown(function(event) {
+            if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
+                event.preventDefault();
+            }
+            // 107 Num Key  +
+            // 109 Num Key  -
+            // 173 Min Key  hyphen/underscor Hey
+            // 61 Plus key  +/= key
+        });
+
+        $(window).bind('mousewheel DOMMouseScroll', function(event) {
+            if (event.ctrlKey == true) {
+                event.preventDefault();
+            }
+        });
+    </script>]]></template>
+    </sp_widget>
+</record_update>

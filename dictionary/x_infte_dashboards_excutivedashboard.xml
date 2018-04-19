@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="ExcutiveDashboard" max_length="40" name="x_infte_dashboards_excutivedashboard" type="collection">
+        <element label="Drilldown Topic" max_length="40" name="drilldown_topic" type="string"/>
+        <element label="Drilldown Unit" max_length="40" name="drilldown_unit" type="string"/>
+        <element label="Heading 1" max_length="40" name="heading_1" type="string"/>
+        <element label="Heading 2" max_length="40" name="heading_2" type="string"/>
+        <element label="Order" max_length="100" name="order" type="integer"/>
+        <element label="Prefered Value" max_length="40" name="prefered_value" type="string"/>
+        <element label="Progress value 1" max_length="40" name="progress_value_1" type="integer"/>
+        <element label="SectionNumber" max_length="40" name="sectionnumber" type="integer"/>
+        <element label="Tile Name" max_length="40" name="tile_name" type="string"/>
+        <element label="Value 1" max_length="40" name="value_1" type="string"/>
+        <element label="Value 2" max_length="40" name="value_2" type="string"/>
+        <element label="Value Color" max_length="40" name="value_color" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="m2m_sp_dependency_css_include">
+    <m2m_sp_dependency_css_include action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sp_css_include display_value="sliding_animation">4c691e70db2d130004bf6f048a9619b1</sp_css_include>
+        <sp_dependency display_value="sliding_animation">314ad6b0db2d130004bf6f048a961973</sp_dependency>
+        <sys_class_name>m2m_sp_dependency_css_include</sys_class_name>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-16 07:09:46</sys_created_on>
+        <sys_id>617a5ab0db2d130004bf6f048a96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sliding_animation.sliding_animation</sys_name>
+        <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+        <sys_update_name>m2m_sp_dependency_css_include_617a5ab0db2d130004bf6f048a96197f</sys_update_name>
+        <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+        <sys_updated_on>2018-04-16 07:09:46</sys_updated_on>
+    </m2m_sp_dependency_css_include>
+</record_update>

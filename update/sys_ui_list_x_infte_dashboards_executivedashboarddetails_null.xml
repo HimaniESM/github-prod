@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_infte_dashboards_executivedashboarddetails" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>heading</element>
+            <list_id display_value="x_infte_dashboards_executivedashboarddetails" element="NULL" name="x_infte_dashboards_executivedashboarddetails" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7dca8678dbe9130004bf6f048a9619d8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-16 06:00:57</sys_created_on>
+            <sys_id>f1ca8678dbe9130004bf6f048a9619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-16 06:00:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>order</element>
+            <list_id display_value="x_infte_dashboards_executivedashboarddetails" element="NULL" name="x_infte_dashboards_executivedashboarddetails" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7dca8678dbe9130004bf6f048a9619d8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-16 06:00:57</sys_created_on>
+            <sys_id>75ca8678dbe9130004bf6f048a9619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-16 06:00:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>parent_tag</element>
+            <list_id display_value="x_infte_dashboards_executivedashboarddetails" element="NULL" name="x_infte_dashboards_executivedashboarddetails" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7dca8678dbe9130004bf6f048a9619d8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-16 06:00:57</sys_created_on>
+            <sys_id>f5ca8678dbe9130004bf6f048a9619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-16 06:00:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>tile_details</element>
+            <list_id display_value="x_infte_dashboards_executivedashboarddetails" element="NULL" name="x_infte_dashboards_executivedashboarddetails" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7dca8678dbe9130004bf6f048a9619d8</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-16 06:00:57</sys_created_on>
+            <sys_id>79ca8678dbe9130004bf6f048a9619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-16 06:00:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_infte_dashboards_executivedashboarddetails</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Amrita.sarkhel</sys_created_by>
+            <sys_created_on>2018-04-16 06:00:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7dca8678dbe9130004bf6f048a9619d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_infte_dashboards_executivedashboarddetails</sys_name>
+            <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+            <sys_update_name>sys_ui_list_x_infte_dashboards_executivedashboarddetails_null</sys_update_name>
+            <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+            <sys_updated_on>2018-04-16 06:00:57</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

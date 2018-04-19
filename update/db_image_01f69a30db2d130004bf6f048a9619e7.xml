@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format>JPEG</format>
+        <height>180</height>
+        <image/>
+        <name>tile_bg8.jpg</name>
+        <size_bytes>5456</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-16 06:54:50</sys_created_on>
+        <sys_id>01f69a30db2d130004bf6f048a9619e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>tile_bg8.jpg</sys_name>
+        <sys_package display_value="esm_it_dashboards" source="x_infte_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="esm_it_dashboards">4b09fd6bdb91d74003a29ea3db9619dd</sys_scope>
+        <sys_update_name>db_image_01f69a30db2d130004bf6f048a9619e7</sys_update_name>
+        <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+        <sys_updated_on>2018-04-16 06:55:15</sys_updated_on>
+        <thumbnail/>
+        <width>320</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#eaaa24</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>image</file_name>
+        <image_height>180</image_height>
+        <image_width>320</image_width>
+        <size_bytes>5456</size_bytes>
+        <size_compressed>1569</size_compressed>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-16 06:55:15</sys_created_on>
+        <sys_id>55371abcdbe9130004bf6f048a9619ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Amrita.sarkhel</sys_updated_by>
+        <sys_updated_on>2018-04-16 06:55:15</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>01f69a30db2d130004bf6f048a9619e7</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="55371abcdbe9130004bf6f048a9619ec">55371abcdbe9130004bf6f048a9619ec</sys_attachment>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-16 06:55:15</sys_created_on>
+        <sys_id>5d371abcdbe9130004bf6f048a9619ec</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2080</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="55371abcdbe9130004bf6f048a9619ec">55371abcdbe9130004bf6f048a9619ec</sys_attachment>
+        <sys_created_by>Amrita.sarkhel</sys_created_by>
+        <sys_created_on>2018-04-16 06:55:15</sys_created_on>
+        <sys_id>dd371abcdbe9130004bf6f048a9619ec</sys_id>
+    </sys_attachment_doc>
+</record_update>
